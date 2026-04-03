@@ -77,7 +77,7 @@ def repl():
             user_input = input('chat> ')
             response = chat.send_message(user_input)
             print(response)
-    except KeyboardInterrupt:
+    except (KeyboardInterrupt, EOFError):
         print()
 
 
