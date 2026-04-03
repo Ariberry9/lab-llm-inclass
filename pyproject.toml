@@ -1,0 +1,12 @@
+[project]
+name = "cmc-csci040-arihu"
+version = "0.1.0"
+description = "Simple chat REPL"
+readme = "README.md"
+authors = [
+  { name="Ariana Hu" }
+]
+dependencies = ["groq", "python-dotenv"]
+
+[project.scripts]
+arihu-chat = "chat:repl"
